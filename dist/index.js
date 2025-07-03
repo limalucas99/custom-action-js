@@ -62,7 +62,7 @@ const github = __nccwpck_require__(245);
 async function run() {
   try {
     // Obtem os inputs da action
-    const token = core.getInput('GITHUB_TOKEN');
+    const token = core.getInput('GH_TOKEN');
     const issueId = core.getInput('issue-id');
     const comment = core.getInput('comment');
 
@@ -94,6 +94,7 @@ async function run() {
 }
 
 run();
+
 module.exports = __webpack_exports__;
 /******/ })()
 ;
