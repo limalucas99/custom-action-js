@@ -4,7 +4,7 @@ const github = require('@actions/github');
 async function run() {
   try {
     // Obtem os inputs da action
-    const token = core.getInput('GITHUB_TOKEN');
+    const token = core.getInput('GH_TOKEN');
     const issueId = core.getInput('issue-id');
     const comment = core.getInput('comment');
 
