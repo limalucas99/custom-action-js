@@ -1,0 +1,19 @@
+name: "Inclui comentário"
+description: "Inclui um comentário em uma issue ou pull request do GitHub."
+author: "Lucas Lima"
+inputs:
+  GITHUB_TOKEN:
+    description: "Token de autenticação do GitHub."
+    required: true
+  issue-id:
+    description: "ID da issue ou pull request onde o comentário será adicionado."
+    required: true
+  comment:
+    description: "O comentário a ser adicionado."
+    required: true
+outputs:
+  comment-id:
+    description: "ID do comentário adicionado."
+runs:
+  using: "node20"
+  main: "dist/index.js"
