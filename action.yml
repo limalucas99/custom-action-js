@@ -2,7 +2,7 @@ name: "Inclui comentário"
 description: "Inclui um comentário em uma issue ou pull request do GitHub."
 author: "Lucas Lima"
 inputs:
-  GITHUB_TOKEN:
+  GH_TOKEN:
     description: "Token de autenticação do GitHub."
     required: true
   issue-id:
